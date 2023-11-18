@@ -1,0 +1,26 @@
+Usage: rocheck [START_ID] [END_ID]
+
+Description:
+  This script verifies the status of Roblox user profiles by checking their availability.
+
+Arguments:
+  START_ID      The starting user ID to begin checking profiles. Default is 1 if not provided.
+  END_ID        (Optional) The ending user ID to stop checking profiles. If provided, the script
+                will check profiles for all IDs in between START_ID and END_ID.
+
+Options:
+  None
+
+Examples:
+  - Check profiles in a range:
+    check 100 150
+
+  - Check profiles starting from ID 50 without specifying an end ID:
+    check 50
+
+  - Check a single profile (ID 50)
+    check 50 50
+
+Note:
+  The script will run indefinitely if only the START_ID is provided. If both START_ID and END_ID
+  are provided, the script will check profiles for all IDs in the specified range.
